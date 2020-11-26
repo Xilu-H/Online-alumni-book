@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC   
+     "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"   
+     "http://struts.apache.org/dtds/struts-2.0.dtd">
+     
+     
+<struts>
+    <package name="liu" extends="struts-default">
+        <global-results>
+            <result name="succeed">/common/succeed.jsp</result>
+            <result name="msg">/common/msg.jsp</result>
+            <result name="msg1">/common/msg1.jsp</result>
+        </global-results>
+        
+        <action name="upload" class="com.util.upload" method="upload">
+             <result name="success">/upload/upload_re.jsp</result>
+        </action>
+        
+        
+        
+        <action name="userReg" class="userAction" method="userReg">
+        </action>
+        <action name="userEdit" class="userAction" method="userEdit">
+        </action>
+       
+        <action name="userMana" class="userAction" method="userMana">
+             <result name="success">/admin/user/userMana.jsp</result>
+        </action>
+        <action name="userDel" class="userAction" method="userDel">
+        </action>
+        
+        
+        
+        <action name="yuanxiaoAdd" class="yuanxiaoAction" method="yuanxiaoAdd">
+        </action>
+        <action name="yuanxiaoRes" class="yuanxiaoAction" method="yuanxiaoRes">
+             <result name="success">/admin/yuanxiao/yuanxiaoRes.jsp</result>
+        </action>
+        <action name="yuanxiaoDel" class="yuanxiaoAction" method="yuanxiaoDel">
+        </action>
+        
+        
+        <action name="banjiAdd" class="banjiAction" method="banjiAdd">
+        </action>
+        <action name="banjiMine" class="banjiAction" method="banjiMine">
+             <result name="success">/qiantai/banji/banjiMine.jsp</result>
+        </action>
+        <action name="banjiRes" class="banjiAction" method="banjiRes">
+             <result name="success">/qiantai/banji/banjiRes.jsp</result>
+        </action>
+        <action name="banjiMana" class="banjiAction" method="banjiMana">
+             <result name="success">/admin/banji/banjiMana.jsp</result>
+        </action>
+        <action name="banjiDel" class="banjiAction" method="banjiDel">
+        </action>
+        
+        
+        
+        
+        <action name="jiaruMine" class="jiaruAction" method="jiaruMine">
+             <result name="success">/qiantai/jiaru/jiaruMine.jsp</result>
+        </action>
+        <action name="jiaruAdd" class="jiaruAction" method="jiaruAdd">
+        </action>
+        
+        
+        
+        
+        
+        <action name="liuyanAll" class="liuyanAction" method="liuyanAll">
+             <result name="success">/qiantai/liuyan/liuyanAll.jsp</result>
+        </action>
+        <action name="liuyanAdd" class="liuyanAction" method="liuyanAdd">
+        </action>
+        <action name="liuyanMana" class="liuyanAction" method="liuyanMana">
+             <result name="success">/admin/liuyan/liuyanMana.jsp</result>
+        </action>
+        <action name="liuyanDel" class="liuyanAction" method="liuyanDel">
+        </action>
+        
+        
+        
+        <action name="zhaopianAll" class="zhaopianAction" method="zhaopianAll">
+             <result name="success">/qiantai/zhaopian/zhaopianAll.jsp</result>
+        </action>
+        <action name="zhaopianAdd" class="zhaopianAction" method="zhaopianAdd">
+        </action>
+        <action name="zhaopianMana" class="zhaopianAction" method="zhaopianMana">
+             <result name="success">/admin/zhaopian/zhaopianMana.jsp</result>
+        </action>
+        <action name="zhaopianDel" class="zhaopianAction" method="zhaopianDel">
+        </action>
+        
+        
+        
+        
+        <action name="tongxunluAll" class="tongxunluAction" method="tongxunluAll">
+             <result name="success">/qiantai/tongxunlu/tongxunluAll.jsp</result>
+        </action>
+    </package>
+</struts>
